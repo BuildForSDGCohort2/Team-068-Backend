@@ -7,5 +7,7 @@ module.exports = {
     port: process.env.PORT || 3000,
   
     mongodb: process.env.DATABASE_URL || connectionString,
+
+    saltRounds: 14
   
   };

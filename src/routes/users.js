@@ -14,6 +14,11 @@ router
   .post(controller.createUser)
 
 router
+  .route('/delete/:id')
+
+  .delete(controller.deleteUser)
+
+router
   .route('/:id')
 
   .get(controller.findByID)
